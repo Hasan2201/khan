@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="code.js"></script>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="topnav" id="myTopnav">
+        <div>
+          <ul3 class = "logo_size">
+           <a href = "index.html">
+          <img src= "HK1.png" class = "logo_size" alt="Failed to Load">
+          </a>
+          </ul3>
+          </div>
+ 
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="other.html">More</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+        
+    <div class="w3-content w3-section" style="max-width:100%">
+      <img class="mySlides w3-animate-fading" src="https://lh4.googleusercontent.com/PmPdvhJYrpb7_3CZFHud00ai6iiqzkvMtk4RO3MkgZWNdBgRdrm0JYOUB5wi5bIWXK88_RyBqBzeCjUMdAMTF0okyf9f3wQOK3umZmF1xWCClGu7ymOsGav5Ai4HMe6Ot10YP5Z7" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="https://lh6.googleusercontent.com/-0dRtsaq4xoyeQdsd1qTEdsfZh4_YbiX14V-f30s1VHgG9LSUhNDMxuyFaOJxwEzMq-QrP6EnkTk_gYMeiEM2-HCfIZTOL3SLwOFD2Ay4nsvG1fZxN8qiH7Cl_nKvLxk6KItP3pmK-c" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="https://lh6.googleusercontent.com/M6g-XQ8v6_qB2Cqb8L-2cC1FMFaqlpC_BtJhsKl7oHejOhkl1U_zxO-pb65CG4CH3corgUeSjkzqEhv0LeO8NFz8EuYP15YvL-2FoFK9fryETX18_r9Fhf8Smp0KLiIsr8VpEx9i" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="https://lh5.googleusercontent.com/XPCI8AN2ki21UKAXGIMLLQPuJNPDL3mzNddgTb_wf0AXYFBq4T1kkAC7TNJNlwEyuAJ8QVOeHbvflwv-cr6TQP2EM6JncZYztPCMup7e1Os491E5LnhwBpUv_5zFEchXmQWER98T" style="width:100%">
+    </div>
+    <p class="item-1">Hasan Khan</p>
+
+<p class="item-2">Student</p>
+
+<p class="item-3">Web Developer</p>
+    <div class="social-media">
+        <span id="Facebook"><a href="https://www.facebook.com/hasan.khan1101" target="_blank" ></a></span>
+        <span id="Twitter"><a href="https://twitter.com/K1ng_hasan" target="_blank" ></a></span>
+        <span  id="LinkedIn"><a href="https://www.linkedin.com/in/hasan-k-24466012a/" target="_blank" ></a></span>
+    </div>
+     
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000);    
+    }
+    </script>
+      
+</body>
+</html>

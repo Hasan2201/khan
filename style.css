@@ -1,0 +1,311 @@
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .topnav a:hover {
+    background-color: black;
+    color: whitesmoke;
+    margin-top:50;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: line-through underline overline;
+    text-decoration-color: gray;
+  }
+  
+  .active {
+    background-color: black;
+    color: blue;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+img{
+    image-rendering: -moz-crisp-edges;   
+}
+    
+#Facebook{
+	height:26px;
+	width:26px;
+  display:inline-block;
+	 text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+  object-fit: fill;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  
+}
+#Twitter{
+	height:26px;
+	width:26px;
+  display:inline-block;
+	 text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+  object-fit: fill;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+#LinkedIn{
+	height:26px;
+	width:26px;
+  display:inline-block;
+	 text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+  object-fit: fill;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+#Facebook a{
+	background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon-hover.png');
+
+}
+
+#Facebook a:hover{
+	background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon.png');
+}
+
+#Twitter{
+	background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon-hover.png');
+
+}
+
+#Twitter a:hover{
+	background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon.png');
+
+}
+
+#LinkedIn{
+	background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon-hover.png');
+
+}
+#LinkedIn a:hover{
+	background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon.png');
+
+}
+.social-media a{
+  background-size:contain;
+  display:inline-block;
+  height:100%;
+  width:100%;
+}
+.logo_size img{
+  float: center;
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
+  
+  
+}
+ul3 a img {
+  position: relative;
+  transition: 1s;
+}
+ul3 a img:hover {
+  transform: rotateX(360deg);
+}
+
+
+
+
+h1 { 
+  position: absolute; 
+  top: 200px; 
+  left: 0; 
+  width: 100%; 
+  color: whitesmoke;
+}
+h3 { 
+  position: absolute; 
+  top: 200px; 
+  left: 0; 
+  width: 100%; 
+  color: whitesmoke;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: bold;
+  
+	top: 2em;
+  
+  width: 40%;
+  
+  font-size: 3em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
+
+
+.container {
+  background-image: url('http://w4.wallls.com/uploads/original/201602/19/wallls.com_65467.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%; /* 2:1 */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+  font-family: 'Courier New', Courier, monospace;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -moz-flex;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-direction    : column;
+-ms-flex-direction          : column;
+flex-direction                : column;
+-webkit-justify-content   : center; 
+justify-content               : center; 
+
+position: absolute;
+top: 0; bottom: 0; left: 30px; right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .container {
+      padding-bottom: 0;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  .content {
+    font-family: 'Courier New', Courier, monospace;
+      position: relative;
+  top: 0; bottom: 0; left: 0; right: 0;
+      padding: 30px;
+  }
+
+}
+
+/* Optional CSS for Codepen demo only */
+
+.content {
+font-size: 140%;
+color: #fff;
+text-shadow: 0 0 8px #000;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.content h2 {
+margin: 0 0 16px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.content p {
+margin: 0 0 26px;
+font-size: 40px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.content p:last-of-type {
+margin-bottom: 0;
+font-family: 'Courier New', Courier, monospace;
+}
